@@ -8,7 +8,7 @@ Questo repository contiene un semplice plugin WordPress denominato **Buste Paga 
 
 ## Installazione
 
-1. Copiare la cartella `wp-content/plugins/bustepaga` all'interno dell'installazione WordPress.
+1. Copiare la cartella `plugin/bustepaga` all'interno dell'installazione WordPress (oppure creare un archivio ZIP della cartella e caricarlo tramite **Carica plugin**).
 2. Attivare il plugin dal pannello di amministrazione.
 3. Accedere alla voce **Buste Paga** per inserire il JSON delle credenziali Google e l'email del commercialista.
 4. Utilizzare lo shortcode `[bustepaga_payslips]` in una pagina per mostrare ai dipendenti le proprie buste paga.

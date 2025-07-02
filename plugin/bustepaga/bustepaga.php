@@ -23,6 +23,9 @@ class Bustepaga_Plugin {
     }
 
     public function activate() {
+        if (!get_role('dipendente')) {
+            add_role('dipendente', 'Dipendente', array('read' => true));
+        }
         if (!wp_next_scheduled(self::CRON_HOOK)) {
             wp_schedule_event(time(), 'hourly', self::CRON_HOOK);
         }
